@@ -22,6 +22,9 @@
 			}
 		]
 	},
+	"repository": {
+        "url": "https://github.com/"
+    },
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
