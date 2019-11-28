@@ -3,7 +3,7 @@
 	"displayName": "go-run",
 	"publisher": "TeamGOGOGO",
 	"description": "make go files run faster",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.40.0"
 	},
@@ -15,6 +15,11 @@
 	],
 	"main": "./extension.js",
 	"contributes": {
+		"keybindings":[{
+			"command": "extension.run",
+			"key": "shift+g",
+			"when": "editorTextFocus"
+		}],
 		"commands": [
 			{
 				"command": "extension.run",
