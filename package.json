@@ -23,7 +23,7 @@
 		]
 	},
 	"repository": {
-        "url": "https://github.com/"
+        "url": "https://github.com/AndrewLiuZY/go-run"
     },
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
