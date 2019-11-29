@@ -21,6 +21,7 @@ function activate(context) {
 		// The code you place here will be executed every time your command is executed
 
 		// Display a message box to the user
+		vscode.window.activeTextEditor.document.save();
 		let ter = vscode.window.terminals.length != 0 ? vscode.window.activeTerminal : vscode.window.createTerminal("terminal");
 		ter.show(true);
 		ter.sendText("go run " + vscode.window.activeTextEditor.document.fileName)
